@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bacteria Classifier</title>
+        <script src="_js/main.js"></script>
+        <link rel="stylesheet" href="_css/main.css">
+    </head>
+    <body>
+        <h1 style="border: 3px solid black; padding: 1em 1em 1em 1em; width: 700px; text-align: center; margin: 0 auto;">Bacteria Classifier Application</h1><br>
+        
+        <div id="buttonholder"> <input type="button" value="View Bacteria Count" onclick="bacteriaCount()"></div><br>
+    
+        
+        <div style="text-align: center;">Bacteria Count: <p id="count"></p></div><br>
+        
+        <form id="formB" name="classBacteria">
+            
+            <div>
+            Common Name: <input type="text" id="commonN"><br>
+            Species Name: <input type="text" id="species"><br>
+            Genus Name: <input type="text" id="genus"><br>
+            </div>
+                
+            Domain Type: <select name="domain" id="domain">
+            <option value="Archaea">Archaea</option>
+            <option value="Bacteria">Bacteria</option>
+            <option value="Eukarya">Eukarya</option>
+            </select><br>
+            
+            
+            <!-- Cant figure out how to change value-->
+            Shape:
+            <input id="shape" type="radio" name="shape" value="Spherical">Spherical
+            <input id="shape" type="radio" name="shape" value="Rod">Rod
+            <input id="shape" type="radio" name="shape" value="Spiral">Spiral
+            <input id="shape" type="radio" name="shape" value="Coma">Comma
+            <input id="shape" type="radio" name="shape" value="Corkscrew">Corkscrew
+            <br><br>
+            
+            <input type="button" value="Add Bacteria" onclick="addBacteria()">
+            <input type="button" value="Show Bacteria" onclick="showBacteria()">
+        
+        
+        
+        
+        </form>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+</html>
